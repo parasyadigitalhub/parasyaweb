@@ -1,4 +1,4 @@
-// File: /Users/sabarinathp/Downloads/paraya/src/app/page.jsx
+// File: /Users/admin/Desktop/parasya/src/app/page.jsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
