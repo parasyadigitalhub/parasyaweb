@@ -88,7 +88,7 @@ const ContinuousCarousel = () => {
     <section className="overflow-hidden">
       <div className="max-w-screen mx-auto flex items-center">
         <div 
-          className="h-[35vh] md:h-[55vh] lg:h-[70vh] relative overflow-hidden w-full"
+          className="h-[30vh] md:h-[55vh] lg:h-[70vh] relative overflow-hidden w-full"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
