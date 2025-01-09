@@ -991,6 +991,9 @@ video {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded-sm {
+  border-radius: 0.125rem;
+}
 .border {
   border-width: 1px;
 }
@@ -1621,6 +1624,10 @@ body {
 }
 
 @media (min-width: 640px) {
+
+  .sm\:invisible {
+    visibility: hidden;
+  }
 
   .sm\:bottom-4 {
     bottom: 1rem;

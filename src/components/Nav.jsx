@@ -96,7 +96,10 @@ const NavBar = () => {
         <Link href="/">
           <span className="block hover:text-gray-400">Home</span>
         </Link>
-        <Link href="/contact">
+        <Link href="/about">
+          <span className="block hover:text-gray-400">About</span>
+        </Link>
+        <Link href="/contacts">
           <span className="block hover:text-gray-400">Contact</span>
         </Link>
         <Link href="/services">

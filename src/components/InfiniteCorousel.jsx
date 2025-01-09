@@ -6,7 +6,9 @@ const ContinuousCarousel = () => {
     { image: "/Images/p1.png" },
     { image: "/Images/p2.jpeg" },
     { image: "/Images/p3.jpeg" },
-    { image: "/Images/p4.jpeg" }
+    { image: "/Images/p4.jpeg" },
+    { image: "/Images/p5.png" },
+    { image: "/Images/p6.png" },
   ];
   
   const totalSlides = [...slides, ...slides, ...slides];
@@ -102,7 +104,7 @@ const ContinuousCarousel = () => {
                 className="w-[85%] relative"
               >
                 <div className="absolute inset-0 p-2">
-                  <div className="relative pt[100%] rounded-lg overflow-hidden">
+                  <div className="relative pt[100%] rounded-sm overflow-hidden">
                     <img
                       src={slide.image}
                       alt={`Carousel item ${index + 1}`}

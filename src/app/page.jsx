@@ -13,7 +13,7 @@ import ContinuousCarousel from "@/components/InfiniteCorousel";
 import TestimonialSlider from "@/components/Testimonial";
 export default function Home() {
   return (
-    <div className=" " style={{ scrollBehavior: "smooth" }}>
+    <div className=" overflow-hidden" style={{ scrollBehavior: "smooth" }}>
 
 
       <ScrollRevealComponent />
