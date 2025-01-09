@@ -50,7 +50,7 @@ const TestimonialCard = ({ testimonial }) => (
 const TestimonialsSection = () => {
   return (
     <section className="min-h-screen py-20 px-4 relative overflow-hidden">
-      {/* Content */}
+      
       <div className="max-w-6xl mx-auto relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4 tracking-tight">

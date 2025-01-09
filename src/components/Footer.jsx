@@ -11,7 +11,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        {/* Social Media Links */}
+        
         <div class="flex justify-center space-x-4 mb-4">
    
    <a href="https://x.com/parasya_in?s=21" 
@@ -68,17 +68,17 @@ export default function Footer() {
    </a>
 </div>
 
-        {/* Contact Section */}
+       
         <div className="mb-4 text-stone-800">
           <p>Need help? / Contact</p>
         </div>
 
-        {/* Tagline */}
+        
         <div className="mb-4">
           <p className="text-white font-bold">ELEVATING YOUR IDENTITY</p>
         </div>
 
-        {/* Footer Bottom */}
+       
         <div className="border-t border-gray-700 pt-4">
           <p className="text-sm">
             &copy; 2024 PARASYA | <Link href="/" className="hover:underline">Privacy Policy</Link>

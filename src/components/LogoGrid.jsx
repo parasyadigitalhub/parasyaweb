@@ -21,12 +21,12 @@ const LogoGrid = () => {
 
   return (
     <section className=" text-white py-6 px-4 lg:py-16 lg:px-20">
-    {/* Heading */}
+   
     <h2 className="text-3xl lg:text-5xl font-bold text-center mb-10">
       We Cherish Our Customers
     </h2>
   
-    {/* Logo Grid */}
+   
     <div className="grid grid-cols-4  border-l  border-stone-800">
       {logos.map((logo, index) => (
         <div

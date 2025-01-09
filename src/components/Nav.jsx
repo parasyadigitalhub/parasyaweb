@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <nav className="fixed w-full top-0 left-0 z-50 shadow-lg backdrop-blur-xl bg-neutral-800/20">
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
+       
         <div className="text-white text-2xl font-bold">
           <Link href="/">
             <Image
@@ -27,7 +27,7 @@ const NavBar = () => {
           </Link>
         </div>
 
-        {/* Desktop Links */}
+       
         <div className="hidden md:flex space-x-6">
         <Link href="/">
             <span className="text-white hover:text-gray-400">Home</span>

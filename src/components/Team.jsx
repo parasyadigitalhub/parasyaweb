@@ -59,7 +59,7 @@ export default function Team() {
               key={index}
               className="relative group rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
             >
-              {/* Square-shaped image with grayscale */}
+              
               <img 
                 src={member.image}
                 alt={member.name}

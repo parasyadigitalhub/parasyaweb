@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <section id="contact_form" className="py-24 bg-neutral-900 relative overflow-hidden mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">
             Get In <span className="text-red-600">Touch</span>
@@ -16,7 +16,7 @@ const ContactForm = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
+         
           <div className="space-y-8">
             <div className="bg-neutral-800/50 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
               <div className="space-y-6">
@@ -44,7 +44,6 @@ const ContactForm = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="bg-neutral-800/50 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
             <form className="space-y-6">
               <div className="grid grid-cols-2 gap-6">

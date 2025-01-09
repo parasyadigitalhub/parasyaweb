@@ -7,7 +7,7 @@ import React from 'react';
 const About = () => {
   return (
     <div id="root">
-      {/* Welcome Section */}
+      
       <section id="welcome" className="py-20 ">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
@@ -36,7 +36,7 @@ world of digital marketing.</p>
         </div>
       </section>
 
-      {/* Objectives Section */}
+    
       <section id="objectives" className="py-20 ">
   <div className="container mx-auto px-4">
     <div className="text-center mb-16">

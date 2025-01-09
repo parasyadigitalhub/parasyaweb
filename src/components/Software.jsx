@@ -45,7 +45,7 @@ export default function Software() {
   return (
     <div className=" text-white py-16 lg:mt-mt-10">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-start justify-between gap-8">
-        {/* Left Content */}
+       
         <div className="md:w-1/2 space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold">Software Development</h1>
           <p className="text-lg text-neutral-300 leading-relaxed">
@@ -60,7 +60,7 @@ scalable, high-performance solutions.
           </button>
         </div>
 
-        {/* Right Accordion */}
+        
         <div className="md:w-1/2 bg-neutral-900 p-6 rounded-lg shadow-lg">
           {accordionData.map((item, index) => (
             <div

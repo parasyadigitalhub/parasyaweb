@@ -4,10 +4,10 @@ import React from "react";
 function Hero() {
   return (
     <div className="relative flex flex-col justify-center items-center mx- h-screen bg-hero overflow-hidden">
-      {/* Animated Gradient Area Above the Text */}
+    
       <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-red-600 to-transparent animate-pulse"></div>
 
-      {/* Hero Text */}
+  
       <div className="relative z-10 text-center">
         <h1 className="font-sans font-black text-5xl md:text-7xl lg:text-8xl text-stone-300 mt-24">
           ELEVATING <br />

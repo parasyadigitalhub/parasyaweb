@@ -17,7 +17,7 @@ const ContinuousCarousel = () => {
   const autoSlideRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
   
-  // Auto-sliding functionality
+  
   useEffect(() => {
     const startAutoSlide = () => {
       autoSlideRef.current = setInterval(() => {

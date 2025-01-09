@@ -5,8 +5,6 @@ import Footer from "@/components/Footer";
 import MouseSpotlight from "@/components/MouseSpotlight";
 
 
-
-
 export const metadata = {
   title: "Parasya",
   description: "Elevating Your Identity",

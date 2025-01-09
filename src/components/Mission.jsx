@@ -5,7 +5,7 @@ function Mission() {
   return (
     <section id="mission" className="py-20k">
     <div className="container mx-auto px-4">
-      {/* Section Header */}
+     
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white mb-4">
           Our <span className="text-red-600">Mission</span> &amp;{" "}
@@ -16,9 +16,8 @@ function Mission() {
         </p>
       </div>
 
-      {/* Mission & Vision Cards */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-        {/* Mission Card */}
+      
         <div className="bg-gray-800/0 rounded-xl p-8 border border-gray-800 transition-all duration-300">
           <div className="flex items-center justify-center w-16 h-16 rounded-full mb-6">
             <svg
