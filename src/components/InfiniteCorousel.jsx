@@ -6,11 +6,7 @@ const ContinuousCarousel = () => {
     { image: "/Images/p1.png" },
     { image: "/Images/p2.jpeg" },
     { image: "/Images/p3.jpeg" },
-    { image: "/Images/p7.png" },
-    { image: "/Images/p5.png" },
-    { image: "/Images/p6.png" },
-    { image: "/Images/p4.jpeg" },
-    { image: "/Images/p8.png" },
+    { image: "/Images/p4.jpeg" }
   ];
   
   const totalSlides = [...slides, ...slides, ...slides];
@@ -21,21 +17,22 @@ const ContinuousCarousel = () => {
   const autoSlideRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
   
+  
   useEffect(() => {
     const startAutoSlide = () => {
       autoSlideRef.current = setInterval(() => {
         if (!isPaused) {
           setTranslateX(prevTranslate => {
-            const newTranslate = prevTranslate - 0.08;
+            const newTranslate = prevTranslate - 0.08; // Further decreased sliding speed
             const maxTranslate = -66.67;
             
             if (newTranslate < maxTranslate) {
-              return 0;
+              return 0; // Reset to start
             }
             return newTranslate;
           });
         }
-      }, 50);
+      }, 50); // Adjust interval for smoother/faster sliding
     };
 
     startAutoSlide();
@@ -47,6 +44,7 @@ const ContinuousCarousel = () => {
     };
   }, [isPaused]);
 
+  // Scroll-based movement
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -78,6 +76,7 @@ const ContinuousCarousel = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Apply transforms
   useEffect(() => {
     if (containerRef.current) {
       containerRef.current.style.transform = `translate3d(${translateX}%, ${translateY}px, 0)`;
@@ -85,10 +84,10 @@ const ContinuousCarousel = () => {
   }, [translateX, translateY]);
 
   return (
-    <section className="overflow-hidden">
-      <div className="max-w-screen mx-auto flex items-center">
+    <section className=" overflow-hidden">
+      <div className="max-w-screen mx-auto   flex items-center">
         <div 
-          className="h-[30vh] md:h-[55vh] lg:h-[70vh] relative overflow-hidden w-full"
+          className=" h-[25vh] md:h-[50vh] lg:h-[70vh] relative overflow-hidden w-full"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -100,14 +99,14 @@ const ContinuousCarousel = () => {
             {totalSlides.map((slide, index) => (
               <div
                 key={index}
-                className="w-[90%] relative aspect-square px-6"
+                className="w-[85%] relative"
               >
-                <div className="absolute inset-0 p-4">
-                  <div className="h-full w-full relative rounded-lg overflow-hidden">
+                <div className="absolute inset-0 p-2">
+                  <div className="relative pt[100%] rounded-lg overflow-hidden">
                     <img
                       src={slide.image}
                       alt={`Carousel item ${index + 1}`}
-                      className="w-full h-full object-cover transform transition-transform duration-500 hover:shadow-lg"
+                      className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
                       loading={index < 4 ? "eager" : "lazy"}
                     />
                   </div>

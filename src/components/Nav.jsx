@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 shadow-lg backdrop-blur-xl bg-neutral-800/20">
+    <nav className="fixed w-full top-0 left-0 z-50 shadow-lg backdrop-blur-xl bg-neutral-800/50">
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-white text-2xl font-bold">
           <a href="/">
