@@ -6,7 +6,7 @@ const LogoGrid = () => {
   const logos = [
     { src: '/Logos/lg1.png', alt: 'Burberry' },
     { src: '/Logos/lg2.png', alt: 'Tesco' },
-    { src: '/Logos/lg3.png', alt: 'The Telegraph' },
+    { src: '/Logos/lg12.png', alt: 'The Telegraph' },
     { src: '/Logos/lg4.png', alt: 'Burberry' },
     { src: '/Logos/lg5.png', alt: 'Tesco' },
     { src: '/Logos/lg6.png', alt: 'Burberry' },
@@ -15,7 +15,7 @@ const LogoGrid = () => {
     { src: '/Logos/lg9.png', alt: 'Burberry' },
     { src: '/Logos/lg10.png', alt: 'Tesco' },
     { src: '/Logos/lg11.png', alt: 'Burberry' },
-    { src: '/Logos/lg12.png', alt: 'Tesco' },
+    { src: '/Logos/lg3.png', alt: 'Tesco' },
   
   ];
 
