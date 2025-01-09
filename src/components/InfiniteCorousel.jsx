@@ -105,7 +105,7 @@ const ContinuousCarousel = () => {
                     <img
                       src={slide.image}
                       alt={`Carousel item ${index + 1}`}
-                      className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
+                      className="w-full h-full object-cover transform transition-transform duration-500 hover:shadow-lg"
                       loading={index < 4 ? "eager" : "lazy"}
                     />
                   </div>
