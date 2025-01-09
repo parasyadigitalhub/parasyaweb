@@ -144,13 +144,13 @@ const EnhancedCarousel = () => {
 
         <button
           onClick={prevSlide}
-          className="absolute left-1 sm:left-4 md:left-8 top-1/2 -translate-y-1/2 p-1.5 sm:p-2 rounded-full bg-white/80 text-gray-800 hover:bg-white transition-all duration-200 shadow-md z-10"
+          className="absolute left-1 sm:left-4 md:left-8 top-1/2 -translate-y-1/2 p-1.5 sm:p-2 rounded-full bg-white/80 text-gray-800 hover:bg-white transition-all duration-200 shadow-md z-10 invisible sm:visible"
         >
           <ChevronLeft />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-1 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 p-1.5 sm:p-2 rounded-full bg-white/80 text-gray-800 hover:bg-white transition-all duration-200 shadow-md z-10"
+          className="absolute right-1 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 p-1.5 sm:p-2 rounded-full bg-white/80 text-gray-800 hover:bg-white transition-all duration-200 shadow-md z-10 invisible sm:visible"
         >
           <ChevronRight />
         </button>

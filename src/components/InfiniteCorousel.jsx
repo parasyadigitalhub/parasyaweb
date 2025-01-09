@@ -19,22 +19,21 @@ const ContinuousCarousel = () => {
   const autoSlideRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
   
-  
   useEffect(() => {
     const startAutoSlide = () => {
       autoSlideRef.current = setInterval(() => {
         if (!isPaused) {
           setTranslateX(prevTranslate => {
-            const newTranslate = prevTranslate - 0.08; // Further decreased sliding speed
+            const newTranslate = prevTranslate - 0.08;
             const maxTranslate = -66.67;
             
             if (newTranslate < maxTranslate) {
-              return 0; // Reset to start
+              return 0;
             }
             return newTranslate;
           });
         }
-      }, 50); // Adjust interval for smoother/faster sliding
+      }, 50);
     };
 
     startAutoSlide();
@@ -46,7 +45,6 @@ const ContinuousCarousel = () => {
     };
   }, [isPaused]);
 
-  // Scroll-based movement
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -78,7 +76,6 @@ const ContinuousCarousel = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Apply transforms
   useEffect(() => {
     if (containerRef.current) {
       containerRef.current.style.transform = `translate3d(${translateX}%, ${translateY}px, 0)`;
@@ -86,10 +83,10 @@ const ContinuousCarousel = () => {
   }, [translateX, translateY]);
 
   return (
-    <section className=" overflow-hidden">
-      <div className="max-w-screen mx-auto   flex items-center">
+    <section className="overflow-hidden">
+      <div className="max-w-screen mx-auto flex items-center">
         <div 
-          className=" h-[25vh] md:h-[50vh] lg:h-[70vh] relative overflow-hidden w-full"
+          className="h-[35vh] md:h-[55vh] lg:h-[70vh] relative overflow-hidden w-full"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -101,10 +98,10 @@ const ContinuousCarousel = () => {
             {totalSlides.map((slide, index) => (
               <div
                 key={index}
-                className="w-[85%] relative"
+                className="w-[90%] relative aspect-square px-6"
               >
-                <div className="absolute inset-0 p-2">
-                  <div className="relative pt[100%] rounded-sm overflow-hidden">
+                <div className="absolute inset-0 p-4">
+                  <div className="h-full w-full relative rounded-lg overflow-hidden">
                     <img
                       src={slide.image}
                       alt={`Carousel item ${index + 1}`}

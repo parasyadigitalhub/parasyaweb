@@ -22,8 +22,8 @@ const MouseSpotlight = () => {
       <div 
         className="absolute rounded-full bg-gradient-to-r from-red-800 to-red-700 blur-3xl"
         style={{
-          width: '500px',
-          height: '500px',
+          width: '400px',
+          height: '400px',
           left: `${mousePosition.x - 200}px`,
           top: `${mousePosition.y - 200}px`,
           transform: 'translate(0, 0)',
