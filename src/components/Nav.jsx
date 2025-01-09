@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,108 +12,98 @@ const NavBar = () => {
   return (
     <nav className="fixed w-full top-0 left-0 z-50 shadow-lg backdrop-blur-xl bg-neutral-800/20">
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
-       
         <div className="text-white text-2xl font-bold">
-          <Link href="/">
-            <Image
+          <a href="/">
+            <img
               src="/Logos/logo-white.png"
               alt="MyLogo"
-              width={150} // Width of the logo
-              height={40} // Height of the logo
-              className="object-contain"
+              className="object-contain w-36 h-10"
             />
-          </Link>
+          </a>
         </div>
 
-       
         <div className="hidden md:flex space-x-6">
-        <Link href="/">
-            <span className="text-white hover:text-gray-400">Home</span>
-          </Link>
-          <Link href="/about">
-            <span className="text-white hover:text-gray-400">About</span>
-          </Link>
-          <Link href="/services">
-            <span className="text-white hover:text-gray-400">Services</span>
-          </Link>
-          <Link href="/contacts">
-            <span className="text-white hover:text-gray-400">Contacts</span>
-          </Link>
-          <Link href="/contacts">
-            <span className="text-white hover:text-gray-400">Blog</span>
-          </Link>
-          <Link href="/contacts">
-            <span className="text-white hover:text-gray-400">Portfolio</span>
-          </Link>
+          <a href="/" className="text-white hover:text-gray-400 transition-colors duration-300">
+            Home
+          </a>
+          <a href="/about" className="text-white hover:text-gray-400 transition-colors duration-300">
+            About
+          </a>
+          <a href="/services" className="text-white hover:text-gray-400 transition-colors duration-300">
+            Services
+          </a>
+          <a href="/contacts" className="text-white hover:text-gray-400 transition-colors duration-300">
+            Contacts
+          </a>
+          <a href="/blog" className="text-white hover:text-gray-400 transition-colors duration-300">
+            Blog
+          </a>
+          <a href="/portfolio" className="text-white hover:text-gray-400 transition-colors duration-300">
+            Portfolio
+          </a>
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu} className="text-white">
-            {isOpen ? (
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
+          <button 
+            onClick={toggleMenu} 
+            className="text-white p-2 rounded-lg hover:bg-white/10 transition-colors duration-300"
+            aria-label="Toggle menu"
+          >
+            <div className="w-6 h-6 relative">
+              <span className={`absolute w-full h-0.5 bg-white transform transition-all duration-300 ease-in-out ${isOpen ? 'rotate-45 top-3' : 'top-1'}`}></span>
+              <span className={`absolute w-full h-0.5 bg-white transform transition-all duration-300 ease-in-out top-3 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+              <span className={`absolute w-full h-0.5 bg-white transform transition-all duration-300 ease-in-out ${isOpen ? '-rotate-45 top-3' : 'top-5'}`}></span>
+            </div>
           </button>
         </div>
       </div>
 
-     
       <div
-        className={`${
-          isOpen ? "block" : "hidden"
-        } md:hidden bg-gray-800 text-white p-4 space-y-4`}
+        className={`transform transition-all duration-300 ease-in-out ${
+          isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+        } md:hidden bg-gradient-to-b from-gray-800 to-gray-900 text-white absolute top-full left-0 w-full min-h-screen`}
       >
-        <Link href="/">
-          <span className="block hover:text-gray-400">Home</span>
-        </Link>
-        <Link href="/about">
-          <span className="block hover:text-gray-400">About</span>
-        </Link>
-        <Link href="/contacts">
-          <span className="block hover:text-gray-400">Contact</span>
-        </Link>
-        <Link href="/services">
-          <span className="block hover:text-gray-400">Services</span>
-        </Link>
-        <Link href="/blog">
-          <span className="block hover:text-gray-400">Blog</span>
-        </Link>
-        <Link href="/portfolio">
-          <span className="block hover:text-gray-400">Portfolio</span>
-        </Link>
+        <div className="p-6 space-y-8">
+          {[
+            { href: "/", label: "Home" },
+            { href: "/about", label: "About" },
+            { href: "/contacts", label: "Contact" },
+            { href: "/services", label: "Services" },
+            { href: "/blog", label: "Blog" },
+            { href: "/portfolio", label: "Portfolio" }
+          ].map((item, index) => (
+            <a 
+              key={item.href} 
+              href={item.href}
+              className="block transform transition-all duration-300 hover:translate-x-2"
+              style={{
+                animationDelay: `${index * 100}ms`,
+                animation: isOpen ? 'slideIn 0.5s ease-out forwards' : 'none'
+              }}
+            >
+              <span className="text-2xl font-medium hover:text-gray-400 transition-colors duration-300">
+                {item.label}
+              </span>
+            </a>
+          ))}
+        </div>
       </div>
+
+      <style jsx>{`
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateX(1rem);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      `}</style>
     </nav>
   );
 };
 
 export default NavBar;
-
 
