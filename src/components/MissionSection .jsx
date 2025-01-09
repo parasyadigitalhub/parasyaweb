@@ -20,12 +20,12 @@ const MissionSection = () => {
       </div>
 
       {/* Right Video Section */}
-      <div className="relative lg:w-1/2 w-full p-8 rounded-xl mt-8 lg:mt-0">
+      <div className="relative lg:w-1/2 w-full p-8 rounded-xl mt-8 lg:mt-0 ">
         {/* Blurred Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-red-800 via-red-600 to-red-800 blur-xl opacity-50 rounded-md"></div>
         
         {/* Video Content */}
-        <video className="relative rounded-md w-full object-cover invisible sm:visible" autoPlay muted loop>
+        <video className="relative rounded-md w-full object-cover " autoPlay muted loop>
           <source src="/Images/Parasya-Motion.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
