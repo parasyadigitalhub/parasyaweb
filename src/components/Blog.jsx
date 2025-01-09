@@ -20,18 +20,17 @@ function Blog() {
           </p>
         </div>
 
-        {/* Blog Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Blog Item 1 */}
-          <div className="group bg-neutral-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-300">
+          {/* Blog Item 1 */} <div className="group bg-neutral-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-300">
             <div className="relative h-48 bg-neutral-700 overflow-hidden">
-              <Image
-                src="/Images/AI.png" // Replace with your image path
-                alt="The Future of AI in Digital Marketing"
-                layout="fill"
-                objectFit="cover"
-                className="group-hover:scale-110 transition-transform duration-500"
-              />
+            <Image
+  src="/Images/AI.png"
+  alt="The Future of AI in Digital Marketing"
+  fill
+  style={{ objectFit: 'cover' }}
+  className="group-hover:scale-110 transition-transform duration-500"
+/>
               
             </div>
             <div className="p-6">
@@ -70,13 +69,13 @@ function Blog() {
           {/* Blog Item 2 */}
           <div className="group bg-neutral-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-300">
             <div className="relative h-48 bg-neutral-700 overflow-hidden">
-              <Image
-                src="/Images/modernweb.png" // Replace with your image path
-                alt="Modern Web Development Trends 2024"
-                layout="fill"
-                objectFit="cover"
-                className="group-hover:scale-110 transition-transform duration-500"
-              />
+            <Image
+  src="/Images/modernweb.png" 
+  alt="Modern Web Development Trends 2024"
+  fill
+  style={{ objectFit: 'cover' }}
+  className="group-hover:scale-110 transition-transform duration-500"
+/>
               
             </div>
             <div className="p-6">
@@ -112,16 +111,19 @@ function Blog() {
             </div>
           </div>
 
-          {/* Blog Item 3 */}
+          
           <div className="group bg-neutral-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-300">
             <div className="relative h-48 bg-neutral-700 overflow-hidden">
-              <Image
-                src="/Images/roi.png" // Replace with your image path
-                alt="Maximizing ROI with Influencer Campaigns"
-                layout="fill"
-                objectFit="cover"
-                className="group-hover:scale-110 transition-transform duration-500"
-              />
+            import Image from 'next/image';
+
+<Image
+  src="/Images/roi.png" 
+  alt="Maximizing ROI with Influencer Campaigns"
+  fill
+  style={{ objectFit: 'cover' }}
+  className="group-hover:scale-110 transition-transform duration-500"
+/>
+
              
             </div>
             <div className="p-6">

@@ -4,12 +4,12 @@ import { useEffect } from "react";
 
 const ScrollRevealComponent = () => {
   useEffect(() => {
-    // Dynamically import ScrollReveal only on the client side
+    
     const initScrollReveal = async () => {
       try {
         const ScrollReveal = (await import('scrollreveal')).default;
         
-        // Initialize ScrollReveal and define animations
+      
         ScrollReveal().reveal(".reveal", {
           distance: "50px",
           duration: 1000,
@@ -24,7 +24,7 @@ const ScrollRevealComponent = () => {
       }
     };
 
-    // Call the initialization function
+    
     initScrollReveal();
   }, []);
 
