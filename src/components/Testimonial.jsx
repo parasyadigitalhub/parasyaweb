@@ -4,19 +4,19 @@ const testimonials = [
   {
     id: 1,
     name: "Meptech",
-    image: "/Logos/lg7.png",
+    image: "/Images/lg7.png",
     content: "LinkedIn marketing strategies helped us connect with the right audience and enhanced our professional presence."
   },
   {
     id: 2,
     name: "Keyworld Qatar",
-    image: "/Logos/lg8.png",
+    image: "/Images/lg8.png",
     content: "The Google Ads campaigns brought excellent results, increasing our visibility and attracting more customers."
   },
   {
     id: 3,
     name: "ILM",
-    image: "/Logos/lg9.png",
+    image: "/Images/lg9.png",
     content: "Parasya delivered outstanding video production work that perfectly captured our vision and made a lasting impression."
   }
 ];
