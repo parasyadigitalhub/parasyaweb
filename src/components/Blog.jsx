@@ -6,7 +6,7 @@ function Blog() {
   return (
     <section
       id="blog_insights"
-      className=" relative overflow-hidden py-4"
+      className=" relative overflow-hidden py-20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Title Section */}
