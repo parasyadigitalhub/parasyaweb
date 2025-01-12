@@ -6,7 +6,11 @@ const ContinuousCarousel = () => {
     { image: "/Images/p1.png" },
     { image: "/Images/p2.jpeg" },
     { image: "/Images/p3.jpeg" },
-    { image: "/Images/p4.jpeg" }
+    { image: "/Images/p4.jpeg" },
+    { image: "/Images/p5.png" },
+    { image: "/Images/p6.png" },
+    { image: "/Images/p7.png" },
+    { image: "/Images/p8.png" }
   ];
   
   const totalSlides = [...slides, ...slides, ...slides];
@@ -111,6 +115,7 @@ const ContinuousCarousel = () => {
                     />
                   </div>
                 </div>
+                
               </div>
             ))}
           </div>

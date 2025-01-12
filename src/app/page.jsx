@@ -9,8 +9,9 @@ import Services from "@/components/Services";
 import ScrollRevealComponent from "../components/ScrollReveal";
 
 import EnhancedCarousel from "@/components/Parallax";
-import ContinuousCarousel from "@/components/InfiniteCorousel";
+
 import TestimonialSlider from "@/components/Testimonial";
+import TripleCarousel from "@/components/DualCorousel";
 export default function Home() {
   return (
     <div className=" overflow-hidden" style={{ scrollBehavior: "smooth" }}>
@@ -42,7 +43,7 @@ export default function Home() {
       </div>
 
       <div className="snap-center ">
-        <ContinuousCarousel />
+        <TripleCarousel/>
 
       </div>
 
