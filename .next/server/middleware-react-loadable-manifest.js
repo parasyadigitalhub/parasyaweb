@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"components/ScrollReveal.jsx -> scrollreveal\":{\"id\":\"components/ScrollReveal.jsx -> scrollreveal\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_scrollreveal_dist_scrollreveal_es_js.js\"]}}"

@@ -60,12 +60,15 @@ const ContactForm = () => {
                   placeholder="Your message here..."
                 ></textarea>
               </div>
+              <a href="https://wa.me/919995498218">
               <button
-                type="submit"
+               type="button"
                 className="w-full bg-red-600 text-white px-4 md:px-6 py-2.5 md:py-3 rounded-lg font-medium text-sm md:text-base hover:bg-red-700 transition-colors"
               >
                 Send Message
               </button>
+              </a>
+             
             </form>
           </div>
         </div>

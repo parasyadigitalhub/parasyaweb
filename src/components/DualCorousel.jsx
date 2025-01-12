@@ -8,6 +8,10 @@ const DualCarousel = () => {
     "/Images/p2.jpeg",
     "/Images/p3.jpeg",
     "/Images/p4.jpeg",
+    "/Images/p5.png",
+    "/Images/p6.png",
+    "/Images/p7.png",
+    "/Images/p8.png",
     "/Images/p1.png",
     "/Images/p2.jpeg",
     "/Images/p3.jpeg",
@@ -17,14 +21,24 @@ const DualCarousel = () => {
   ];
 
   const bottomImages = [
-   "/Images/p5.png",
-   "/Images/p6.png",
-   "/Images/p7.png",
-   "/Images/p8.png",
-   "/Images/p5.png",
-   "/Images/p6.png",
-   "/Images/p7.png",
-   "/Images/p8.png",
+   "/Images/p9.png",
+   "/Images/p10.png",
+   "/Images/p11.png",
+   "/Images/p12.png",
+   "/Images/p13.png",
+   "/Images/p14.png",
+   "/Images/p15.png",
+   "/Images/p16.png",
+   "/Images/p17.png",
+   "/Images/p9.png",
+   "/Images/p10.png",
+   "/Images/p11.png",
+   "/Images/p12.png",
+   "/Images/p13.png",
+   "/Images/p14.png",
+   "/Images/p15.png",
+   "/Images/p16.png",
+   "/Images/p17.png",
    
    
   ];
