@@ -48,6 +48,7 @@ const MissionSection = () => {
             className="w-full h-full object-cover pointer-events-none"
             playsInline
             muted
+            loop
             preload="auto"
             loading="lazy"
           >
