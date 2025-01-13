@@ -3,6 +3,7 @@ import NavBar from "@/components/Nav";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import MouseSpotlight from "@/components/MouseSpotlight";
+import LoadingScreen from "@/components/LoadingScreen";
 
 
 export const metadata = {
@@ -16,11 +17,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       
-      >
+      > <LoadingScreen>
         <MouseSpotlight/>
         <NavBar/>
         {children}
         <Footer/>
+        </LoadingScreen>
       </body>
     </html>
   );

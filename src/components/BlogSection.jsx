@@ -45,7 +45,7 @@ const BlogSection = () => {
         {/* Title Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">
-            Latest <span className="text-red-600">Blogs</span>
+            Our <span className="text-red-600">Blogs</span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Stay updated with our latest thoughts on digital marketing and technology
@@ -98,7 +98,7 @@ const BlogSection = () => {
 
         {/* Modal for expanded content */}
         {selectedPost && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 mt-24">
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 mt-28">
             <div className="bg-neutral-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-white/10">
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
