@@ -12,10 +12,14 @@ import EnhancedCarousel from "@/components/Parallax";
 
 import TestimonialSlider from "@/components/Testimonial";
 import TripleCarousel from "@/components/DualCorousel";
+import LoadingScreen from "@/components/LoadingScreen";
 export default function Home() {
   return (
     <div className=" overflow-hidden" style={{ scrollBehavior: "smooth" }}>
 
+
+      <LoadingScreen>
+      
 
       <ScrollRevealComponent />
       <div className="snap-center ">
@@ -67,8 +71,9 @@ export default function Home() {
 
       </div>
 
-
+      </LoadingScreen>
 
     </div>
+
   );
 }

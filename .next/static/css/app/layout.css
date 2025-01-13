@@ -1192,6 +1192,10 @@ video {
 .bg-white\/90 {
   background-color: rgb(255 255 255 / 0.9);
 }
+.bg-stone-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 10 9 / var(--tw-bg-opacity, 1));
+}
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
 }

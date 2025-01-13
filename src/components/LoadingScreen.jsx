@@ -43,7 +43,7 @@ const LoadingScreen = ({ children }) => {
   if (!isVisible) return children;
 
   return (
-    <div className="fixed inset-0 bg-stone-9500 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-stone-950 flex items-center justify-center z-50">
       <div className={`text-center transform transition-opacity ${
         isFinalFade ? 'opacity-0 duration-1000' : 'opacity-100 duration-200'
       }`}>
