@@ -1,4 +1,64 @@
+'use client';
 import React from 'react';
+
+// ScrollAnimation Component with 3D effects
+const ScrollAnimation = () => {
+  React.useEffect(() => {
+    const reveals = document.querySelectorAll('[class*="reveal-"]');
+    
+    const reveal = () => {
+      reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < windowHeight - elementVisible) {
+          element.classList.add('active');
+        }
+      });
+    };
+    
+    window.addEventListener('scroll', reveal);
+    setTimeout(reveal, 100);
+    
+    return () => window.removeEventListener('scroll', reveal);
+  }, []);
+
+  return (
+    <style>
+      {`
+        [class*="reveal-"] {
+          opacity: 0;
+          transition: all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1);
+          transform-style: preserve-3d;
+          perspective: 2000px;
+          will-change: transform, opacity;
+        }
+
+        .reveal-flip-left {
+          transform: rotateY(70deg) translateZ(100px) translateX(-100px);
+        }
+
+        .reveal-flip-center {
+          transform: rotateX(70deg) translateZ(100px) translateY(50px);
+        }
+
+        .reveal-flip-right {
+          transform: rotateY(-70deg) translateZ(100px) translateX(100px);
+        }
+
+        [class*="reveal-"].active {
+          opacity: 1;
+          transform: rotateX(0) rotateY(0) translateZ(0) translate(0);
+        }
+
+        .delay-200 { transition-delay: 200ms; }
+        .delay-400 { transition-delay: 400ms; }
+        .delay-600 { transition-delay: 600ms; }
+      `}
+    </style>
+  );
+};
 
 const testimonials = [
   {
@@ -21,8 +81,8 @@ const testimonials = [
   }
 ];
 
-const TestimonialCard = ({ testimonial }) => (
-  <div className="relative group h-64">
+const TestimonialCard = ({ testimonial, animationClass }) => (
+  <div className={`relative group h-64 ${animationClass}`}>
     <div className="absolute inset-0 bg-gradient-to-r from-red-800/50 to-gray-800/50 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-75"></div>
     <div className="relative p-6 bg-gray-950 backdrop-blur-md rounded-2xl border border-red-900/30 hover:border-red-700/40 transition-all duration-300 h-full flex flex-col">
       <div className="flex items-start gap-4 mb-4">
@@ -48,11 +108,20 @@ const TestimonialCard = ({ testimonial }) => (
 );
 
 const TestimonialsSection = () => {
+  const getAnimationClass = (index) => {
+    const classes = [
+      'reveal-flip-left delay-200',
+      'reveal-flip-center delay-400',
+      'reveal-flip-right delay-600'
+    ];
+    return classes[index];
+  };
+
   return (
     <section className="min-h-screen py-20 px-4 relative overflow-hidden">
-      
+      <ScrollAnimation />
       <div className="max-w-6xl mx-auto relative">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 reveal-flip-center">
           <h2 className="text-4xl font-bold text-white mb-4 tracking-tight">
             What Our Clients Say
           </h2>
@@ -62,8 +131,12 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard 
+              key={testimonial.id} 
+              testimonial={testimonial}
+              animationClass={getAnimationClass(index)}
+            />
           ))}
         </div>
       </div>

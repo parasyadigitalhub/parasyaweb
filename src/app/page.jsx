@@ -5,14 +5,12 @@ import LogoGrid from "@/components/LogoGrid";
 import Mission from "@/components/Mission";
 import MissionSection from "@/components/MissionSection ";
 import Services from "@/components/Services";
-
-import ScrollRevealComponent from "../components/ScrollReveal";
-
 import EnhancedCarousel from "@/components/Parallax";
-
 import TestimonialSlider from "@/components/Testimonial";
 import TripleCarousel from "@/components/DualCorousel";
 import LoadingScreen from "@/components/LoadingScreen";
+import ScrollRevealComponent from "@/components/ScrollReveal";
+
 export default function Home() {
   return (
     <div className=" overflow-hidden" style={{ scrollBehavior: "smooth" }}>
@@ -21,7 +19,7 @@ export default function Home() {
       <LoadingScreen>
       
 
-      <ScrollRevealComponent />
+      <ScrollRevealComponent/>
       <div className="snap-center ">
         <Hero />
       </div>
@@ -36,12 +34,12 @@ export default function Home() {
         <MissionSection />
       </div>
 
-      <div className="snap-center reveal">
+      <div className="snap-center ">
         <Mission />
 
       </div>
 
-      <div className="snap-center ">
+      <div className="snap-center reveal">
         <IndustriesSection />
 
       </div>
@@ -51,12 +49,12 @@ export default function Home() {
 
       </div>
 
-      <div className="snap-center reveal">
+      <div className="snap-center ">
         <Blog />
 
       </div>
 
-      <div className="snap-center reveal">
+      <div className="snap-center">
         <Services />
 
       </div>
