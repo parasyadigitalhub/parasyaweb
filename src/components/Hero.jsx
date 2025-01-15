@@ -34,7 +34,7 @@ function Hero() {
       {/* Enhanced gradient overlay with pulse animation */}
       <div className={`
         absolute top-0 left-0 right-0 h-1/3 
-        bg-gradient-to-b from-red-500 to-transparent
+        bg-gradient-to-b from-red-600 to-transparent
         animate-pulse
         transition-opacity duration-1000
       `}
@@ -55,7 +55,7 @@ function Hero() {
           }}
         >
           {/* Static glow effect layer */}
-          <div className="absolute inset-0 bg-red-500 rounded-full opacity-20 blur-3xl"></div>
+          <div className="absolute inset-0 rounded-full opacity-20 blur-3xl"></div>
           
           {/* Planet image with stable opacity */}
           <img 
