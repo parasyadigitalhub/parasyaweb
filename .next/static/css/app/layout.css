@@ -549,6 +549,9 @@ video {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
 }
@@ -712,6 +715,9 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -813,6 +819,9 @@ video {
 }
 .h-screen {
   height: 100vh;
+}
+.h-\[90vh\] {
+  height: 90vh;
 }
 .max-h-16 {
   max-height: 4rem;

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { companies } from '@/data/portfolioData';
 
 // Modal Component
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, onClose, children, selectedCompany }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -23,14 +23,23 @@ const Modal = ({ isOpen, onClose, children }) => {
         className="fixed inset-0 bg-black/80 backdrop-blur-sm"
         onClick={onClose}
       />
-      <div className="relative z-50 w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-neutral-900 rounded-lg border border-white/10 p-6">
-        <button
-          onClick={onClose}
-          className="absolute right-4 top-4 text-white/70 hover:text-white"
-        >
-          ✕
-        </button>
-        {children}
+      <div className="relative z-50 w-full max-w-4xl h-[90vh] bg-neutral-900 rounded-lg border border-white/10 flex flex-col">
+        <div className="sticky top-0 z-10 bg-neutral-900 border-b border-white/10 p-4 flex justify-between items-center">
+          {selectedCompany && (
+            <h1 className="text-xl sm:text-2xl font-normal text-white">
+              {selectedCompany.name}
+            </h1>
+          )}
+          <button
+            onClick={onClose}
+            className="text-white/70 hover:text-white ml-4"
+          >
+            ✕
+          </button>
+        </div>
+        <div className="flex-1 overflow-y-auto p-6 pt-4">
+          {children}
+        </div>
       </div>
     </div>
   );
@@ -42,10 +51,6 @@ const BrandingSection = ({ company }) => {
 
   return (
     <div className="space-y-4 sm:space-y-6 md:space-y-8 max-w-5xl mx-auto text-white">
-      <h1 className="text-xl sm:text-2xl font-normal border-b border-white/10 pb-4">
-        {company.name}
-      </h1>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
         <div className="bg-neutral-800/50 backdrop-blur-lg rounded-xl border border-white/10 overflow-hidden">
           <img 
@@ -191,6 +196,7 @@ const PortfolioSection = () => {
       <Modal 
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
+        selectedCompany={selectedCompany}
       >
         <BrandingSection company={selectedCompany} />
       </Modal>
