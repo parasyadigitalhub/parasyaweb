@@ -106,6 +106,10 @@ export const companies = [
       '/Branding/buytr/m2.png',
       '/Branding/buytr/m3.png',
       '/Branding/buytr/m4.png',
+      '/Branding/buytr/m5.png',
+      '/Branding/buytr/m6.png',
+      '/Branding/buytr/m7.png',
+      '/Branding/buytr/m8.png',
     ],
     logoImage: '/Branding/buytr/logo.png'
   },
