@@ -173,7 +173,7 @@ export const companies = [
   {
     id: 4,
     name: 'Future Stars Sports Academy',
-    description: 'Together We Rise',
+    description: '',
     image: '/Branding/future/logo.png',
     brandingUrl: '/branding/company-one',
     websiteUrl: 'https://company-one.com',
@@ -226,5 +226,111 @@ export const companies = [
       '/Branding/future/m8.png',
     ],
     logoImage: '/Branding/future/logo.png'
-  }
+  },
+  {
+    id: 5,
+    name: 'Nextpath',
+    description: 'Educare',
+    image: '/Branding/nextpath/logo.png',
+    brandingUrl: '/branding/company-one',
+    websiteUrl: 'https://company-one.com',
+    brandingOverview: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.',
+    problemStatement: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.',
+    location: ' INDIA',
+    logicPoints: [
+      { 
+        title: 'Message Quotes', 
+        description: "The large quote symbolizes the consultant, and the smaller one represents the student, highlighting the exchange of knowledge and guidance.",
+        image: '/Branding/nextpath/log1.png'
+      },
+      { 
+        title: 'Two Books', 
+        description: "Symbolizes the foundation of learning and available educational resources.",
+        image: '/Branding/nextpath/log2.png'
+      },
+      { 
+        title: 'Window', 
+        description: "Represents a gateway to a better future, emphasizing the opportunities and brighter prospects provided by the platform.",
+        image: '/Branding/nextpath/log3.png'
+      },
+      { 
+        title: 'Round Text & Blue Colour', 
+        description: "The round text conveys inclusiveness and community, while the blue color signifies trust, wisdom, and stability.",
+        image: '/Branding/nextpath/log4.png'
+      },
+     
+    ],
+    testimonials: [
+      { author: 'John Doe', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.' },
+    ],
+    brandingImages: [
+      '/Branding/nextpath/m1.png',
+      '/Branding/nextpath/m2.png',
+      '/Branding/nextpath/m3.png',
+      '/Branding/nextpath/m4.png',
+      '/Branding/nextpath/m5.png',
+      '/Branding/nextpath/m6.png',
+      '/Branding/nextpath/m7.png',
+      '/Branding/nextpath/m8.png',
+    ],
+    logoImage: '/Branding/nextpath/logo.png'
+  },
+  {
+    id: 6,
+    name: 'Nextgen',
+    description: 'Innovate.Educate.Elevate',
+    image: '/Branding/nextgen/logo.png',
+    brandingUrl: '/branding/company-one',
+    websiteUrl: 'https://company-one.com',
+    brandingOverview: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.',
+    problemStatement: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.',
+    location: ' INDIA',
+    logicPoints: [
+      { 
+        title: 'Normal student in the shape of X', 
+        description: "The X-shaped student represents inclusivity and accessibility for all, regardless of background.",
+        image: '/Branding/nextgen/log1.png'
+      },
+      { 
+        title: 'Student Wearing Graduation Cap and Handrising', 
+        description: "This imagery reflects NextGen Studies' commitment to excellence, with the cap symbolizing achievement and the raised hand representing engagement.",
+        image: '/Branding/nextgen/log2.png'
+      },
+      { 
+        title: 'Open Door in Graduation Cap', 
+        description: "The open door in the graduation cap symbolizes NextGen Studies as a gateway to opportunity, knowledge, and personal growth.",
+        image: '/Branding/nextgen/log3.png'
+      },
+      { 
+        title: 'Bold Fonts', 
+        description: "The bold font reflects NextGen Studies' innovative, forward-thinking approach to education and commitment to staying ahead in learning trends.",
+        image: '/Branding/nextgen/log4.png'
+      },
+      { 
+        title: 'Red shades', 
+        description: "The red shades represent passion, energy, and the drive of students and educators in the NextGen Studies community.",
+        image: '/Branding/nextgen/log5.png'
+      },
+      { 
+        title: 'Black shades and curve fonts', 
+        description: "The black shades and curved fonts convey sophistication, professionalism, and the dynamic nature of modern education.",
+        image: '/Branding/nextgen/log6.png'
+      },
+     
+    ],
+    testimonials: [
+      { author: 'John Doe', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.' },
+    ],
+    brandingImages: [
+      '/Branding/nextgen/m1.png',
+      '/Branding/nextgen/m2.png',
+      '/Branding/nextgen/m3.png',
+      '/Branding/nextgen/m4.png',
+      '/Branding/nextgen/m5.png',
+      '/Branding/nextgen/m6.png',
+      '/Branding/nextgen/m7.png',
+      '/Branding/nextgen/m8.png',
+    ],
+    logoImage: '/Branding/nextgen/logo.png'
+  },
 ];
