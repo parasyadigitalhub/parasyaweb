@@ -77,7 +77,7 @@ function Blog() {
           <div className="reveal-card delay-200 group bg-neutral-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-300">
             <div className="relative h-48 bg-neutral-700 overflow-hidden">
               <Image
-                src="/Images/AI.png"
+                src="/Images/AI.jpg"
                 alt="The Future of AI in Digital Marketing"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -108,7 +108,7 @@ function Blog() {
           <div className="reveal-card delay-400 group bg-neutral-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-300">
             <div className="relative h-48 bg-neutral-700 overflow-hidden">
               <Image
-                src="/Images/modernweb.png"
+                src="/Images/modernweb.jpg"
                 alt="Modern Web Development Trends 2024"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -139,7 +139,7 @@ function Blog() {
           <div className="reveal-card delay-600 group bg-neutral-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-300">
             <div className="relative h-48 bg-neutral-700 overflow-hidden">
               <Image
-                src="/Images/roi.png"
+                src="/Images/roi.jpg"
                 alt="Maximizing ROI with Influencer Campaigns"
                 fill
                 style={{ objectFit: 'cover' }}
