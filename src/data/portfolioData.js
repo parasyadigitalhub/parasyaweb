@@ -78,23 +78,23 @@ export const companies = [
     location: 'United States',
     logicPoints: [
       { 
-        title: 'Strategic Vision', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: "Letter 'B' and Arabic Letter 'ب'", 
+        description: "The incorporation of 'B' signifies modernity, while the Arabic 'ب' adds elegance, blending contemporary and traditional influences.",
         image: '/Branding/buytr/log1.png'
       },
       { 
-        title: 'Market Analysis', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: 'Perfume Bottle & Diamond Bottle Cap', 
+        description: "The perfume bottle symbolizes the brand's core product, while the diamond cap highlights its premium, luxurious essence.",
         image: '/Branding/buytr/log2.png'
       },
       { 
-        title: 'Innovation Focus', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: 'Shopping Trolley', 
+        description: "The shopping trolley complements 'Buyitr,' symbolizing convenience and a wide range of perfume choices.",
         image: '/Branding/buytr/log3.png'
       },
       { 
-        title: 'Growth Strategy', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: 'Colour Palette', 
+        description: "Gold symbolizes luxury and prestige, while gray adds a modern, sleek touch, together evoking opulence and style.",
         image: '/Branding/buytr/log4.png'
       }
     ],
@@ -182,33 +182,33 @@ export const companies = [
     location: 'UAE INDIA',
     logicPoints: [
       { 
-        title: 'Strategic Vision', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: 'Rising Star', 
+        description: "Symbolizes aspiration, achievement, and the goal of becoming a future star, aligning with the academy's mission.",
         image: '/Branding/future/log1.png'
       },
       { 
-        title: 'Market Analysis', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: 'Two Athletes Celebrating', 
+        description: "Shows athletes achieving their dreams with the academy's support, highlighting its commitment to helping individuals reach their goals and celebrate success.",
         image: '/Branding/future/log2.png'
       },
       { 
-        title: 'Innovation Focus', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: 'Untrained To Trained Athlete', 
+        description: "The smaller figure represents a beginner, the larger a professional, illustrating the academy's commitment to developing athletes' skills and confidence over time.",
         image: '/Branding/future/log3.png'
       },
       { 
-        title: 'Growth Strategy', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: 'Two Boundary Circle', 
+        description: 'Represents "all-sports training in one academy," symbolizing an inclusive space for developing multiple sports under one roof.',
         image: '/Branding/future/log4.png'
       },
       { 
-        title: 'Innovation Focus', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: 'Colour Palette', 
+        description: "White symbolizes unity, gold represents excellence, and gray denotes balance, reflecting the academy's mission to promote discipline, achievement, and stability.",
         image: '/Branding/future/log5.png'
       },
       { 
-        title: 'Innovation Focus', 
-        description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        title: 'Commitment to Growth', 
+        description: 'The academy fosters continuous improvement, focusing on skill development, confidence building, and personalized support to help athletes reach their full potential.',
         image: '/Branding/future/log6.png'
       }
     ],
