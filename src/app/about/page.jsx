@@ -1,14 +1,13 @@
 import CoreValue from '@/components/Corevalue';
-import LogoGrid from '@/components/LogoGrid';
 import Mission from '@/components/Mission';
 import Team from '@/components/Team';
 import React from 'react';
 
 const About = () => {
   return (
-    <div id="root">
+    <div id="root" className='overflow-x-hidden'>
       
-      <section id="welcome" className="py-20 ">
+      <section id="welcome" className="py-20 mt-5 ">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <div className="w-24 h-1 mx-auto mb-8"></div>
