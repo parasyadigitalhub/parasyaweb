@@ -40,29 +40,29 @@ const EnhancedCarousel = () => {
   const slides = [
     {
       image: "/posters/sportwindo.jpg",
-      url: "https://sportswindo.com"
+      url: "/portfolio"
     },
 
     {
       image: "/posters/futurestars.jpg",
-      url: "https://futurestarssports.academy"
+      url: "/portfolio"
     },
    
     {
       image: "/posters/p4.jpg",
-      url: "https://meptechuae.com"
+      url: "/portfolio"
     },
     {
       image: "/posters/keyworld.jpg",
-      url: "https://keyworldqatar.com"
+      url: "/portfolio"
     },
     {
       image: "/posters/luvwish.jpg",
-      url: "https://luvwish.in"
+      url: "/portfolio"
     },
     {
       image: "/posters/nextgen.jpg",
-      url: "https://nextgen.in"
+      url: "/portfolio"
     },
     
     
