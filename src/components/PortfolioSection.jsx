@@ -148,13 +148,13 @@ const PortfolioSection = () => {
           Discover our latest work and success stories
         </p>
         
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
           {companies.map((company) => (
             <div 
               key={company.id} 
               className="group bg-neutral-800/50 backdrop-blur-lg rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-300"
             >
-              <div className="relative h-40 sm:h-48 md:h-56 overflow-hidden">
+              <div className="relative h-44 sm:h-48 md:h-52 overflow-hidden">
                 <div className="absolute inset-0 bg-neutral-700/20 transition-colors duration-300 z-10" />
                 <img
                   src={company.image}
@@ -163,18 +163,18 @@ const PortfolioSection = () => {
                 />
               </div>
               
-              <div className="p-3 sm:p-4 md:p-6 lg:p-8">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-1 sm:mb-2 group-hover:text-red-600 transition-colors duration-300">
+              <div className="p-4 sm:p-5 md:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-red-600 transition-colors duration-300">
                   {company.name}
                 </h3>
-                <p className="text-gray-400 text-sm sm:text-base mb-3 sm:mb-4 md:mb-6 line-clamp-2 sm:line-clamp-none">
+                <p className="text-gray-400 text-sm mb-4 line-clamp-2">
                   {company.description}
                 </p>
                 
-                <div className="flex gap-2 sm:gap-4">
+                <div className="flex gap-3">
                   <button
                     onClick={(e) => handleBrandingClick(e, company)}
-                    className="text-center bg-transparent border border-white text-white text-xs sm:text-sm px-3 sm:px-4 md:px-6 py-2 sm:py-2 md:py-3 rounded-full hover:bg-white hover:text-black transition flex-1"
+                    className="text-center bg-transparent border border-white text-white text-xs sm:text-sm px-4 py-2 rounded-full hover:bg-white hover:text-black transition flex-1"
                   >
                     Branding
                   </button>
@@ -182,7 +182,7 @@ const PortfolioSection = () => {
                     href={company.websiteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-center bg-transparent border border-white text-white text-xs sm:text-sm px-3 sm:px-4 md:px-6 py-2 sm:py-2 md:py-3 rounded-full hover:bg-white hover:text-black transition flex-1"
+                    className="text-center bg-transparent border border-white text-white text-xs sm:text-sm px-4 py-2 rounded-full hover:bg-white hover:text-black transition flex-1"
                   >
                     Visit
                   </a>
