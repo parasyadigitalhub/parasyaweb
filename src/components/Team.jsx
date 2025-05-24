@@ -6,19 +6,19 @@ const teamMembers = [
     name: "Rishan",
     role: "Founder",
     image: "/Images/Rishanpic.png",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/rishanparasya/",
   },
   {
     name: "Arjun",
     role: "Founder & CEO",
     image: "/Images/Arjunpic.png",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/arjun-parasya-749176258/",
   },
   {
     name: "Abhay",
     role: "Chief Technical Officer",
     image: "/Images/Abhaypic.png",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/abhay-sunil-1553241a8/",
   },
   {
     name: "Jefrin",
