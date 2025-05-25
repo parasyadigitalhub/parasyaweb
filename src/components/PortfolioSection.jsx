@@ -264,6 +264,9 @@ const PortfolioSection = () => {
             </div>
           ))}
         </div>
+        {/* <h2 className="text-3xl mt-8 sm:text-4xl md:text-5xl font-bold text-white mb-2 sm:mb-3 md:mb-4 text-center">
+          Web Solutions
+        </h2> */}
       </div>
 
       <Modal 

@@ -415,3 +415,10 @@ export const mobileApps = [
     ]
   }
 ]
+
+export const webApps = [
+  {
+    id: 1,
+    name: ''
+  }
+]
