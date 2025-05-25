@@ -419,6 +419,57 @@ export const mobileApps = [
 export const webApps = [
   {
     id: 1,
-    name: ''
+    name: 'Sports Windo',
+    description: 'E-Commerce',
+    image: '/webapps/sportswindo/logo.png',
+    appOverview: '',
+    appStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',    appUrl: 'Sportswindo.com',
+    appStatement: '',
+    location: 'India',
+    testimonials: [
+      { author: 'John Doe', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit .' },
+    ]
+  },
+  {
+    id: 2,
+    name: 'Avior Biotech',
+    description: 'HealthCare',
+    image: '/webapps/aviorbiotech/logo.png',
+    appOverview: '',
+    appStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    appUrl: 'Aviorbiotech.com',
+    appStatement: '',
+    location: 'India',
+    testimonials: [
+      { author: 'John Doe', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit .' },
+    ]
+  },
+  {
+    id: 3,
+    name: 'Future Star Sports',
+    description: 'Sports',
+    image: '/Branding/future/logo.png',
+    appOverview: '',
+    appStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    appUrl: 'Futurestarsports.academy',
+    appStatement: '',
+    location: 'India',
+    testimonials: [
+      { author: 'John Doe', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit .' },
+    ]
+  },
+  {
+    id: 4,
+    name: 'Next Path',
+    description: 'Education',
+    image: '/Branding/nextpath/logo.png',
+    appOverview: '',
+    appStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    appUrl: 'Nextpatheducare.in',
+    appStatement: '',
+    location: 'India',
+    testimonials: [
+      { author: 'John Doe', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit .' },
+    ]
   }
 ]
