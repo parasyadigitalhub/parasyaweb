@@ -423,7 +423,7 @@ export const webApps = [
     description: 'E-Commerce',
     image: '/webapps/sportswindo/logo.png',
     appOverview: '',
-    appStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',    appUrl: 'Sportswindo.com',
+    appStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', appUrl: 'Sportswindo.com',
     appStatement: '',
     location: 'India',
     testimonials: [
@@ -466,6 +466,34 @@ export const webApps = [
     appOverview: '',
     appStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     appUrl: 'Nextpatheducare.in',
+    appStatement: '',
+    location: 'India',
+    testimonials: [
+      { author: 'John Doe', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit .' },
+    ]
+  },
+  {
+    id: 5,
+    name: 'Mep Tech ',
+    description: 'Technology',
+    image: '/webapps/meptech/logo.png',
+    appOverview: '',
+    appStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    appUrl: 'Meptechuae.com',
+    appStatement: '',
+    location: 'India',
+    testimonials: [
+      { author: 'John Doe', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit .' },
+    ]
+  },
+  {
+    id: 6,
+    name: 'MMK Trading ',
+    description: 'Trading',
+    image: '/webapps/mmk/logo.png',
+    appOverview: '',
+    appStatement: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    appUrl: 'https://www.mmktrading.co/',
     appStatement: '',
     location: 'India',
     testimonials: [
