@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { companies } from '@/data/portfolioData';
 import { mobileApps } from '@/data/portfolioData';
+import { webApps } from '@/data/portfolioData';
 
 // Modal Component
 const Modal = ({ isOpen, onClose, children, selectedCompany }) => {
@@ -264,9 +265,52 @@ const PortfolioSection = () => {
             </div>
           ))}
         </div>
-        {/* <h2 className="text-3xl mt-8 sm:text-4xl md:text-5xl font-bold text-white mb-2 sm:mb-3 md:mb-4 text-center">
+        <h2 className="text-3xl mt-8 sm:text-4xl md:text-5xl font-bold text-white mb-2 sm:mb-3 md:mb-4 text-center">
           Web Solutions
-        </h2> */}
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
+          {webApps.map((apps) => (
+            <div 
+              key={apps.id} 
+              className="group bg-neutral-800/50 backdrop-blur-lg rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-300"
+            >
+              <div className="relative h-44 sm:h-48 md:h-52 overflow-hidden">
+                <div className="absolute inset-0 bg-neutral-700/20 transition-colors duration-300 z-10" />
+                <img
+                  src={apps.image || '/mobileapps/default/default.png'}
+                  alt={apps.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              
+              <div className="p-4 sm:p-5 md:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-red-600 transition-colors duration-300">
+                  {apps.name}
+                </h3>
+                <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                  {apps.description}
+                </p>
+                
+                <div className="flex gap-3">
+                  <button
+                    onClick={(e) => handleBrandingClick(e, apps)}
+                    className="text-center bg-transparent border border-white text-white text-xs sm:text-sm px-4 py-2 rounded-full hover:bg-white hover:text-black transition flex-1"
+                  >
+                    Overview
+                  </button>
+                  <a
+                    href={apps.appUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-center bg-transparent border border-white text-white text-xs sm:text-sm px-4 py-2 rounded-full hover:bg-white hover:text-black transition flex-1"
+                  >
+                    Visit
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <Modal 
